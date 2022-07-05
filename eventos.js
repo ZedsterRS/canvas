@@ -36,18 +36,22 @@ function dibujarTeclado(evento)
         case teclas.UP:
             dibujarLinea(colorcito, x, y, x, y - movimiento, papel);
             y = y - movimiento;
+            console.log("nos vamos pa' arriba mi negro");
         break;
         case teclas.DOWN:
             dibujarLinea(colorcito, x, y, x, y + movimiento, papel);
             y = y + movimiento;
+            console.log("nos vamos pa' abajo mi negro");
         break;
         case teclas.LEFT:
             dibujarLinea(colorcito, x, y, x - movimiento, y, papel);
             x = x - movimiento;
+            console.log("nos vamos pa' la izquerda mi negro");
         break;
         case teclas.RIGHT:
             dibujarLinea(colorcito, x, y, x + movimiento, y, papel);
             x = x + movimiento;
+            console.log("nos vamos pa' la derecha mi negro");
         break;
     }
 }
